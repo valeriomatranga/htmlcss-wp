@@ -14,8 +14,8 @@
 *:not(body,header, html, main){
 /*     border: 1px solid grey;
     border-radius: 10px; 
- */   /*  margin-top: 10px; */
-}
+    margin-top: 10px; 
+ */}
 /* /utility */
 
 body{
@@ -25,9 +25,7 @@ body{
 
 /* header */
 #logo, #navigazione{
-/*     height: 50px;
- */
- margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 li{
@@ -35,6 +33,7 @@ li{
     display: inline;
     padding: 10px 15px;
 }
+
 a{
     text-decoration: none;
     text-transform: uppercase;
@@ -56,10 +55,10 @@ a{
     position: absolute; top: 0; left: 0;
 }
 
-#img{
+.img{
     height: 100%;
     width: 100%;
-    background-size:auto;
+    background-size: cover;
     background-position: center;
     border-radius: 10px;
 }
@@ -68,7 +67,7 @@ a{
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;
-    position: absolute; top: 0; left: 0;
+    position: absolute; top: 0px; left: 0px;
     border-radius: 10px;
 }
 
@@ -77,35 +76,52 @@ a{
     padding: 40px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute; top: 60%;
-
+    position: absolute; top: 50%;
 }
 /* /header */
 
 /* main */
 #titolo_contenuto{
-/*     height: 80px;
- */}
+}
+
+ h2{
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+ }
+
+ .tenda_1:not(.par){
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute; top: 0; left: 0;
+    border-radius: 10px;
+ }
 
 .section_left, .section_right{
-/*     height: 400px;
- */    width: 20%;
+    height: 300px;
+    width: 18%;
     float: left;
+    position: relative;
+    margin-top: 30px;
 }
 
 #content{
-/*     height: 400px;
- */    width: 60%;
+    width: 60%;
     float: left;
+    position: relative;
+    margin:30px 20px;
 }
 
-.img{
-/*     height: 150px;
- */    margin: 10px;
+#banner{
+    height: 300px;
+    width: 60%;
 }
+
 /* /main */
 
+/* footer */
 footer{
-/*     height: 50px;
- */    width: 100%;
+    width: 100%;
 }
+/* /footer */
