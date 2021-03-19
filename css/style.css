@@ -10,12 +10,6 @@
     display: table;
     clear: both;
 }
-
-*:not(body,header, html, main){
-/*     border: 1px solid grey;
-    border-radius: 10px; 
-    margin-top: 10px; 
- */}
 /* /utility */
 
 body{
@@ -58,8 +52,7 @@ a{
 .img{
     height: 100%;
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -72,56 +65,77 @@ a{
 }
 
 #text_copertina{
-    width: 600px;
+    width: 900px;
     padding: 40px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute; top: 50%;
+    position: absolute; top: 55%;
 }
 /* /header */
 
 /* main */
-#titolo_contenuto{
-}
-
- h2{
-    font-size: 40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 30px;
- }
-
- .tenda_1:not(.par){
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100%;
-    position: absolute; top: 0; left: 0;
-    border-radius: 10px;
- }
 
 .section_left, .section_right{
     height: 300px;
     width: 18%;
     float: left;
-    position: relative;
     margin-top: 30px;
+}
+
+.colonne_laterali{
+    position: relative;
 }
 
 #content{
     width: 60%;
     float: left;
-    position: relative;
     margin:30px 20px;
 }
 
 #banner{
+    position: relative;
     height: 300px;
-    width: 60%;
 }
 
+.tenda_1{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute; top: 0; left: 0;
+    border-radius: 10px;
+}
+
+h2{
+   font-size: 40px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   margin-top: 30px;
+}
+
+h3{
+    margin: 15px 0px 10px 0px;
+}
+
+p:not(#pretium, #intest){
+    color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
 /* /main */
 
 /* footer */
 footer{
     width: 100%;
+    margin-top: 10px;
+}
+
+footer p:only-of-type{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+strong{
+    color: red;
+    font-size: 30px;
 }
 /* /footer */
