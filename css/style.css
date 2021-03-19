@@ -1,0 +1,111 @@
+/* utility */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*:not(body,header, html, main){
+/*     border: 1px solid grey;
+    border-radius: 10px; 
+ */   /*  margin-top: 10px; */
+}
+/* /utility */
+
+body{
+    width: 90%;
+    margin: auto;
+}
+
+/* header */
+#logo, #navigazione{
+/*     height: 50px;
+ */
+ margin-bottom: 50px;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    padding: 10px 15px;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#container_1{
+    height: 600px;
+    width: 100%;    
+    position: relative;    
+}
+
+#copertina{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    position: absolute; top: 0; left: 0;
+}
+
+#img{
+    height: 100%;
+    width: 100%;
+    background-size:auto;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.tenda{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute; top: 0; left: 0;
+    border-radius: 10px;
+}
+
+#text_copertina{
+    width: 600px;
+    padding: 40px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute; top: 60%;
+
+}
+/* /header */
+
+/* main */
+#titolo_contenuto{
+/*     height: 80px;
+ */}
+
+.section_left, .section_right{
+/*     height: 400px;
+ */    width: 20%;
+    float: left;
+}
+
+#content{
+/*     height: 400px;
+ */    width: 60%;
+    float: left;
+}
+
+.img{
+/*     height: 150px;
+ */    margin: 10px;
+}
+/* /main */
+
+footer{
+/*     height: 50px;
+ */    width: 100%;
+}
